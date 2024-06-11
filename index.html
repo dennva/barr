@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="porto.css">
+</head>
+<body>
+    <header>
+        <h1>Muhammad akbar zahid</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Selamat datang di portofolio saya. Saya seorang Art designer dengan sedikit pengalaman 
+            </p>
+        </section>
+        <section id="profile">
+            <h2>Profil</h2>
+            <p>Berikut adalah sedikit tentang saya. Saya memiliki pengalaman dalam Art design dan 
+                telah menyelesaikan beberapa project.</p>
+        </section>
+        <section id="projects">
+            <h2>Proyek</h2>
+            <div class="project" id="project1">
+                <h3>Proyek 1</h3>
+                <img src="C:\Users\User\Downloads\My porto\images\1.jpg" alt="Contoh project 1" class="project-image">
+                <p>Ini menceritakan tentang seorang anak kecil yang sangat ingin 
+                    makan piesta ciken naget.</p>
+                <button onclick="toggleVisibility('project1')"></button>
+            </div>
+            <div class="project" id="project1">
+                <h3>Proyek 2</h3>
+                <img src="C:\Users\User\Downloads\My porto\images\2.jpg" alt="Contoh project 2" class="project-image">
+                <p>ini adalah salah satu character yang ada di anime one punch men.</p>
+                <button onclick="toggleVisibility('project1')"></button>
+            </div>
+            <div class="project" id="project1">
+                <h3>Proyek 3</h3>
+                <img src="C:\Users\User\Downloads\My porto\images\3.png" alt="Contoh project 3" class="project-image">
+                <p>ini adalah character yang ada di anime bernama hanako.</p>
+                <button onclick="toggleVisibility('project1')"></button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Hubungi saya melalui email di <a href="smktelkompekanbaru@gmail.com">smktelkompekanbaru@gmail.com</a </p>
+        </section>
+    </main>
+    
+
+    
+    <script>
+        function toggleVisibility(projectId) {
+            var project = document.getElementById(projectId);
+            var image = project.querySelector('.project-image');
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
